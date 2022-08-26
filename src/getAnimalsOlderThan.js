@@ -5,7 +5,7 @@ const { species } = data;
 function getAnimalsOlderThan(animal, age) {
   const especie = species.find((specie) => specie.name === animal);
   // console.log(especie);
-  const residentes = especie['residents'];
+  const residentes = especie.residents;
   // console.log(residentes);
   return residentes.every((resident) => resident.age > age);
 }
