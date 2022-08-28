@@ -13,15 +13,15 @@ describe('Testes da função getOpeningHours', () => {
       Monday: { open: 0, close: 0 },
     });
   });
-  it("Para os argumentos Monday e 09:00-AM deve retornar a string 'The zoo is closed'", () => {
+  it('Para os argumentos Monday e 09:00-AM deve retornar a string \'The zoo is closed\'', () => {
     const result = getOpeningHours('Monday', '09:00-AM');
     expect(result).toBe('The zoo is closed');
   });
-  it("Para os argumentos Tuesday e 09:00-AM deve retornar a string 'The zoo is open'Para os argumentos Tuesday e 09:00-AM deve retornar a string 'The zoo is open'", () => {
+  it('Para os argumentos Tuesday e 09:00-AM deve retornar a string \'The zoo is open\'Para os argumentos Tuesday e 09:00-AM deve retornar a string \'The zoo is open\'', () => {
     const result = getOpeningHours('Tuesday', '09:00-AM');
     expect(result).toBe('The zoo is open');
   });
-  it("Para os argumentos Wednesday e 09:00-PM deve retornar a string 'The zoo is closed'", () => {
+  it('Para os argumentos Wednesday e 09:00-PM deve retornar a string \'The zoo is closed\'', () => {
     const result = getOpeningHours('Wednesday', '09:00-PM');
     expect(result).toBe('The zoo is closed');
   });
