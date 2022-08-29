@@ -29,8 +29,8 @@ const getLocationAnimals = (element) => {
 };
 // console.log(animalsLocation([ 'lions', 'tigers' ]));
 
-const allEmplyees = [];
 const getAllEmployees = (...rest) => {
+  const allEmplyees = [];
   if (rest.length === 0) {
     data.employees.forEach((e) => {
       allEmplyees.push({
@@ -94,7 +94,9 @@ function getEmployeesCoverage(...rest) {
 // console.log('-----------------');
 // console.log(getEmployeesCoverage({ id: 'c1f50212-35a6-4ecd-8223-f835538526c2' }));
 // console.log('-----------------');
-// console.log(getEmployeesCoverage());
+console.log(getEmployeesCoverage());
+console.log('-----------------');
+console.log(getEmployeesCoverage());
 // console.log('-----------------');
 // console.log(getEmployeesCoverage({ name: 'Não existe' }));
 module.exports = getEmployeesCoverage;
