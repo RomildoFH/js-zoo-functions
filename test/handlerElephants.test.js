@@ -28,4 +28,11 @@ describe('Testes da função HandlerElephants', () => {
     const resultado = (handlerElephants('averageAge'));
     expect(resultado).toBe(10.5);
   });
+  it('Testar se é função', () => {
+    expect(typeof handlerElephants).toBe('function');
+  })
+  it('Para o argumento count deve retornar o número inteiro 4', () => {
+    const resultado = handlerElephants('count')
+    expect(resultado).toBe(4);
+  })
 });

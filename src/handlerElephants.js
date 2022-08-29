@@ -33,11 +33,11 @@ const handlerElephants = (param) => {
   return computeData(param, elephants);
 };
 
-console.log(handlerElephants('names').includes('Jefferson'));
-console.log(handlerElephants('count'));
-console.log(handlerElephants('averageAge'));
-console.log(handlerElephants(1));
-console.log(handlerElephants('location'));
-console.log(handlerElephants('foods'));
+// console.log(handlerElephants('names').includes('Jefferson'));
+// console.log(handlerElephants('count'));
+// console.log(handlerElephants('averageAge'));
+// console.log(handlerElephants(1));
+// console.log(handlerElephants('location'));
+// console.log(handlerElephants('foods'));
 
 module.exports = handlerElephants;
