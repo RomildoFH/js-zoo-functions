@@ -63,7 +63,6 @@ const getOpeningHours = (day, dataHour) => {
   message += openOrClosed(period, hour, open, close) ? 'open' : 'closed';
   return message;
 };
-// console.log(getOpeningHours('Tuesday', '10:00-AM'))
-// console.log(getOpeningHours('Tuesdayy','10:00-AM'))
+// console.log(getOpeningHours('Wednesday', ' 9:00-AM'))
 
 module.exports = getOpeningHours;
