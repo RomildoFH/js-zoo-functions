@@ -30,9 +30,9 @@ describe('Testes da função HandlerElephants', () => {
   });
   it('Testar se é função', () => {
     expect(typeof handlerElephants).toBe('function');
-  })
+  });
   it('Para o argumento count deve retornar o número inteiro 4', () => {
-    const resultado = handlerElephants('count')
+    const resultado = handlerElephants('count');
     expect(resultado).toBe(4);
-  })
+  });
 });
