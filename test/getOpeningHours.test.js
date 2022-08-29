@@ -25,22 +25,22 @@ describe('Testes da função getOpeningHours', () => {
     const result = getOpeningHours('Wednesday', '09:00-PM');
     expect(result).toBe('The zoo is closed');
   });
-  it("Teste se caso receba um dia inexistente retorna um erro", () => {
-    expect(() => getOpeningHours('Tuesdayy','10:00-AM')).toThrow(/^The day must be valid. Example: Monday$/);
+  it('Teste se caso receba um dia inexistente retorna um erro', () => {
+    expect(() => getOpeningHours('Tuesdayy', '10:00-AM')).toThrow(/^The day must be valid. Example: Monday$/);
   });
-  it("Teste se caso receba não a sigla AM ou PM errada, retorne erro", () => {
-    expect(() => getOpeningHours('Tuesday','10:00-AN')).toThrow(/^The abbreviation must be 'AM' or 'PM'$/);
+  it('Teste se caso receba não a sigla AM ou PM errada, retorne erro', () => {
+    expect(() => getOpeningHours('Tuesday', '10:00-AN')).toThrow(/^The abbreviation must be 'AM' or 'PM'$/);
   });
-  it("Teste se caso receba não o separador da sigla, retorne erro", () => {
-    expect(() => getOpeningHours('Tuesday','10:00 AM')).toThrow(/^The minutes should represent a number$/);
+  it('Teste se caso receba não o separador da sigla, retorne erro', () => {
+    expect(() => getOpeningHours('Tuesday', '10:00 AM')).toThrow(/^The minutes should represent a number$/);
   });
-  it("Teste se caso receba hora maior que 12, retorne erro", () => {
+  it('Teste se caso receba hora maior que 12, retorne erro', () => {
     expect(() => getOpeningHours('Wednesday', '13:30-AM')).toThrow(/^The hour must be between 0 and 12$/);
   });
-  it("Teste se caso receba minuto maior que 59, retorne erro", () => {
+  it('Teste se caso receba minuto maior que 59, retorne erro', () => {
     expect(() => getOpeningHours('Wednesday', '11:60-AM')).toThrow(/^The minutes must be between 0 and 59$/);
   });
-  it("Teste se caso receba o horário com formato errado, retorne erro", () => {
+  it('Teste se caso receba o horário com formato errado, retorne erro', () => {
     expect(() => getOpeningHours('Wednesday', ' 9:00-AM')).toThrow(/^The hour should represent a number$/);
   });
 });
